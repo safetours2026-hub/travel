@@ -7,7 +7,6 @@ app = Flask(__name__)
 
 # Define the route for the home page
 @app.route("/")
-def hello_world():
     
     # 1. Configure email details
     SENDER_EMAIL = "safetours2026@gmail.com"
@@ -30,7 +29,7 @@ def hello_world():
         print("Email sent successfully!")
     except Exception as e:
         print(f"Failed to send email: {e}")
-        return Hello 
+        return 
 
 # Run the local development server
 if __name__ == "__main__":
