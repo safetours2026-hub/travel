@@ -30,7 +30,7 @@ def hello_world():
         print("Email sent successfully!")
     except Exception as e:
         print(f"Failed to send email: {e}")
-        return Hello
+        return Hello 
 
 # Run the local development server
 if __name__ == "__main__":
