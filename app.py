@@ -1,13 +1,13 @@
 from flask import Flask
-import smtplib
-from email.message import EmailMessage
+
 
 # Initialize the Flask application
 app = Flask(__name__)
 
 # Define the route for the home page
 @app.route("/")
-    return Hello, World 
+def run():
+    return Hello  
 
 # Run the local development server
 if __name__ == "__main__":
