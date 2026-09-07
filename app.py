@@ -1,10 +1,13 @@
-from flask import Flask, request
+from flask import Flask
 
+# Initialize the Flask application
 app = Flask(__name__)
 
-@app.route('/')
-def run():
-    return print("Hello World")
+# Define the route for the home page
+@app.route("/")
+def hello_world():
+    return "Hello, World!"
 
-if __name__=='__main__':
+# Run the local development server
+if __name__ == "__main__":
     app.run(debug=True)
